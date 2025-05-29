@@ -51,6 +51,7 @@ WHERE
     AND c.country_of_origin IN ('Canada', 'Mexico')
     AND t.transaction_date BETWEEN '2025-01-01' AND '2025-03-31';
 
+
 Transactions by Demographics and Risk Location:
 
 SELECT 
