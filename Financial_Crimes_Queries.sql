@@ -1,6 +1,5 @@
 High-Value Transactions by Age and Transaction Type in the Last 90 Days:
 
-
 SELECT 
     customer_id,
     age,
@@ -19,7 +18,6 @@ ORDER BY
 
 
 Transactions to High-Risk/Tax Haven Countries:
-
 
 SELECT 
     t.customer_id,
@@ -53,7 +51,6 @@ WHERE
     AND c.country_of_origin IN ('Canada', 'Mexico')
     AND t.transaction_date BETWEEN '2025-01-01' AND '2025-03-31';
 
-
 Transactions by Demographics and Risk Location:
 
 SELECT 
@@ -71,6 +68,3 @@ WHERE
     AND age BETWEEN 25 AND 40
     AND amount > 15000
     AND transaction_type = 'Wire Transfer';
-
-
-
